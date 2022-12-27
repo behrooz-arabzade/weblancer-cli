@@ -1,6 +1,11 @@
+import IGitObject from "./IGitObject";
 import IVersion from "./IVersion";
 export default interface IComponent {
     path: string;
     version: IVersion;
-    save: (newVersion: IVersion) => Promise<boolean>;
+    gitObject: IGitObject;
+    save: (newVersion?: IVersion) => Promise<boolean>;
+    update: (version?: IVersion) => Promise<boolean>;
+    publishVersion: (version?: IVersion) => Promise<boolean>;
+    unPublishVersion: (version?: IVersion) => Promise<boolean>;
 }

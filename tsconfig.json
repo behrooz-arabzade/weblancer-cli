@@ -6,6 +6,7 @@
     "declaration": true,
     "outDir": "lib",
     "rootDir": "src",
+    "baseUrl": "src",
     "strict": true,
     "types": ["node"],
     "esModuleInterop": true,

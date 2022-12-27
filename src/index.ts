@@ -1,12 +1,10 @@
 #!/usr/bin/env node
 
-const chalk = require("chalk");
-const clear = require("clear");
-const figlet = require("figlet");
-const path = require("path");
+import chalk from "chalk";
+import clear from "clear";
+import figlet from "figlet";
 const program = require("commander");
 
-// clear command line every time weblancer command called
 clear();
 
 console.log(
